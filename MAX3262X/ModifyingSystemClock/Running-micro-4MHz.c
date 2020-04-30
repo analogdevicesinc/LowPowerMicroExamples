@@ -95,28 +95,28 @@ int main(void)
       printf("count = %d\n", count++);
    }
 
-	//We are using the following types to set this which can be found in clkman.h
+// We are using the following types to set this which can be found in clkman.h
 
 
-	//typedef enum {
-	//    /** Clock select for 96MHz oscillator */
-	//    CLKMAN_SYSTEM_SOURCE_96MHZ,
-	//    /** Clock select for 4MHz oscillator */
-	//    CLKMAN_SYSTEM_SOURCE_4MHZ
-	//}
-	//clkman_system_source_select_t;
+//typedef enum {
+//    /** Clock select for 96MHz oscillator */
+//    CLKMAN_SYSTEM_SOURCE_96MHZ,
+//    /** Clock select for 4MHz oscillator */
+//    CLKMAN_SYSTEM_SOURCE_4MHZ
+//}
+//clkman_system_source_select_t;
 
-	///**
-	// * @brief Defines clock scales for the system clock.
-	// * @note 4MHz System source can only be divided down by a maximum factor of 8.
-	// */
-	//typedef enum {
-	//    CLKMAN_SYSTEM_SCALE_DIV_1,     /** Clock scale for dividing system by 1  */
-	//    CLKMAN_SYSTEM_SCALE_DIV_2,     /** Clock scale for dividing system by 2  */
-	//    CLKMAN_SYSTEM_SCALE_DIV_4,     /** Clock scale for dividing system by 4  */
-	//    CLKMAN_SYSTEM_SCALE_DIV_8,     /** Clock scale for dividing system by 8  */
-	//    CLKMAN_SYSTEM_SCALE_DIV_16     /** Clock scale for dividing system by 16  */
-	//} clkman_system_scale_t;
+///**
+// * @brief Defines clock scales for the system clock.
+// * @note 4MHz System source can only be divided down by a maximum factor of 8.
+// */
+//typedef enum {
+//    CLKMAN_SYSTEM_SCALE_DIV_1,     /** Clock scale for dividing system by 1  */
+//    CLKMAN_SYSTEM_SCALE_DIV_2,     /** Clock scale for dividing system by 2  */
+//    CLKMAN_SYSTEM_SCALE_DIV_4,     /** Clock scale for dividing system by 4  */
+//    CLKMAN_SYSTEM_SCALE_DIV_8,     /** Clock scale for dividing system by 8  */
+//    CLKMAN_SYSTEM_SCALE_DIV_16     /** Clock scale for dividing system by 16  */
+//} clkman_system_scale_t;
 
 
    // Set the System clock to the 4MHz oscillator
