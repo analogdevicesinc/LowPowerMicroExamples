@@ -5,3 +5,5 @@ MAX3262X series of micro controllers has different clock rate choices for the sy
 
 Operation:
 This code was developed in a such a way that initially the micro runs at its standard clock rate.  Once the SW1 is pressed the micro enters 4MHz mode. A string is shown on the LCD display “NHD12832_ShowString((uint8_t*)"4 Mhz clock", 0, 4);”.
+
+See the oscilloscope screen shots in this directory showing before and after pics of the microprocessor clock signal.
