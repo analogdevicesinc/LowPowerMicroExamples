@@ -1,4 +1,4 @@
-![Image of Low Power E-ink Displya](https://hackster.imgix.net/uploads/attachments/939457/cover_CwK5BkdXww.jpg?auto=compress%2Cformat&w=900&h=675&fit=min)
+![Image of Low Power E-ink Displya](https://hackster.imgix.net/uploads/attachments/939457/cover_CwK5BkdXww.jpg?auto=compress%2Cformat&w=450&h=337&fit=min)
 
 **Low Power E-ink Display With Temperature Sensor**
 
