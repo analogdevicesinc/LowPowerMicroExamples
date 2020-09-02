@@ -75,12 +75,6 @@ i2c_req_t req;							//I2C Device structure
 volatile int i2c_flag;
 volatile int i2c_flag1;
 
-/***** Device Register Addresses *****/
-static uint8_t INTIALIZE_SLEEP[] = {0x01, 0x01};					//Config register address and sleep-mode configuration data 
-static uint8_t CONFIGURATION_REGISTER_ADDR[] = {0x01, 0x00};		//Config register address and active mode setup
-static uint8_t CONFIGURATION_ONESHOT[] = {0x01, 0x81};				//Config register address and one-shot configuration data
-static uint8_t TEMPERATURE_REGISTER_ADDR[] = {0x00};				//Temperature register address
-
 
 /**
  * @brief Eclipse Library for implementing the MAX30205 Human Body

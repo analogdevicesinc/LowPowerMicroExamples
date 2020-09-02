@@ -54,6 +54,13 @@
 
 #include "MAX30205_Sensor.h"
 
+/***** Device Register Addresses *****/
+static uint8_t INTIALIZE_SLEEP[] = {0x01, 0x01};					//Config register address and sleep-mode configuration data 
+//static uint8_t CONFIGURATION_REGISTER_ADDR[] = {0x01, 0x00};		//Config register address and active mode setup
+static uint8_t CONFIGURATION_ONESHOT[] = {0x01, 0x81};				//Config register address and one-shot configuration data
+static uint8_t TEMPERATURE_REGISTER_ADDR[] = {0x00};				//Temperature register address
+
+
 /**
  * @brief	Initialize I2C protocol for MAX32660 microcontroller. Must be called before any read or write commands in project. Only needs to be called once in main function. Initialzies P0_2 (SCL) and P0_3 (SDA)
  */

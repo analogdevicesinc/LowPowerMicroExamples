@@ -80,7 +80,7 @@
  	SPIinit();
  
    //Initialize GPIO Pins
- 	 pinInit ();
+ 	 pinInit();
  
    StartScreen();
   
