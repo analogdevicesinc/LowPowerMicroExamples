@@ -1,4 +1,4 @@
-# Max3263x Example -- I2C Master 1
+# MAX3263x Example -- I2C Master 1
 
 **Description:**
 
