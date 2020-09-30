@@ -32,19 +32,19 @@ The project contained in this repository contains a project designed to show a b
 
 The list below outlines a general procedure for using I2C with DMA:
 1.	Initialize the I2C module intended to be used. 
-   - Enable DMA on the I2C module through the DMA register.
-   - Set the Master Mode Enable bit on the Control 0 register.
-   - Set the TX FIFO and RX FIFO thresholds to 1 to trigger DMA transactions on threshold interrupts.
-   - If reading, set the amount of bytes you intend to receive (maximum is 256) on the I2C module’s RX Control 1 register in the “rxcnt” field.
+    - Enable DMA on the I2C module through the DMA register.
+    - Set the Master Mode Enable bit on the Control 0 register.
+    - Set the TX FIFO and RX FIFO thresholds to 1 to trigger DMA transactions on threshold interrupts.
+    - If reading, set the amount of bytes you intend to receive (maximum is 256) on the I2C module’s RX Control 1 register in the “rxcnt” field.
 2.	Configure the DMA channels intended to be used.
-   - Set the Request Select (reqsel) parameter to DMA_REQSEL_I2C0TX or to DMA_REQSEL_I2C0RX macros, depending on which buffer the channel is supposed to connect to.
-   - Set the DMA source and destination widths to DMA_WIDTH_BYTE to avoid overflow/underflow on the target buffers or arrays. Set the Burst Size to 1 for the same reason.
-   - Set the source increment enable to 1 if writing, set the destination increment enable to 1 if reading. Whichever address (source or destination) is connected to an I2C buffer should NOT be increment enabled. 
-   - Enable Interrupts on each DMA channel, if you intend to use them (optional).
+    - Set the Request Select (reqsel) parameter to DMA_REQSEL_I2C0TX or to DMA_REQSEL_I2C0RX macros, depending on which buffer the channel is supposed to connect to.
+    - Set the DMA source and destination widths to DMA_WIDTH_BYTE to avoid overflow/underflow on the target buffers or arrays. Set the Burst Size to 1 for the same reason.
+    - Set the source increment enable to 1 if writing, set the destination increment enable to 1 if reading. Whichever address (source or destination) is connected to an I2C buffer should NOT be increment enabled. 
+    - Enable Interrupts on each DMA channel, if you intend to use them (optional).
 3.	Set the Source, Destination, and Count registers for the DMA channels being used. 
-   - If the channel is connected to a TX FIFO, the destination address will be ignored.
-   - If the channel is connected to an RX FIFO, the source address will be ignored.
-   - Set the count to the size of the data array you intend to send or receive.
+    - If the channel is connected to a TX FIFO, the destination address will be ignored.
+    - If the channel is connected to an RX FIFO, the source address will be ignored.
+    - Set the count to the size of the data array you intend to send or receive.
 4. Load the FIFO with a slave address. If writing, you should do this before you start the DMA TX channel. If reading, it can be done afterwards.
 5.	Start the DMA Channels you intend to use.
 6.	Send a Start bit on the I2C bus manually by setting the start bit on the module’s Master Control register.
