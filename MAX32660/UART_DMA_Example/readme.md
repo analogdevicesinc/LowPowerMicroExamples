@@ -1,7 +1,9 @@
 # MAX32660 UART Example
 This project is designed to demonstrate how to use UART with Direct Memory Access (DMA)on the MAX32660 microcontroller, specifically, the [evaluation kit]https://www.maximintegrated.com/en/products/microcontrollers/MAX32660-EVSYS.html). It was developed in the Eclipse IDE, Release Neon.3 Version 4.6.0.
 
-You *must* connect P0_4 (TX) to P0_5 (RX) for the example to function correctly!
+You *must* connect P0_4 (TX) to P0_5 (RX) for the example to function correctly.
+
+![Setup](setup.png)
 
 The example sends data between these two pins in a UART operation that is managed by the DMA
 controller, leaving the processor idle while the transaction occurs. 
