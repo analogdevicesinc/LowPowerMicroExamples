@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [                
+                "${workspaceFolder}/**",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/${config:target}PeriphDriver/Include",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/Boards/Include",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/Boards/${config:board}/Include",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/CMSIS/Device/Maxim/${config:target}/Include",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/CMSIS/Include",
+                "${config:MAXIM_PATH}/Libraries/CMSIS/Include",
+                "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/MAXUSB/include/**"
+            ],
+            "defines": [
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "${config:MAXIM_PATH}/Toolchain/bin/arm-none-eabi-gcc.exe",
+            "browse": {
+                "path": [
+                    "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/${config:target}PeriphDriver/Source",
+                    "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/Boards/Source",
+                    "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/Boards/${config:board}/Source",
+                    "${config:MAXIM_PATH}/Firmware/${config:target}/Libraries/MAXUSB/src"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
