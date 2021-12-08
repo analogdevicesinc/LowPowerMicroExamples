@@ -25,3 +25,8 @@ Flow Control = none.
 The device driver installation script for Windows is included. It is digitally signed (the one in the kit may or may not be depending on the version).  This will allow for proper installation under Windows 10. To install, with the MAX32620FTHR unplugged from the USB port, simply right-click on the maxim_usb-uart_adapter.inf file and choose "install". Then, with the firmware loaded, plug the MAX32620FTHR board into a spare USB port.  To check if it was a successful install, look in the Windows "Device Manager".  See screenshot of a successful install below (with MAX32620FTHR plugged in).
 
 ![image](./images/CDC-ACM_SerialPort.png)
+
+## Source Code Project
+The source code of this firmware project relies on the following:
+- Installation of the Low Power ARM Micro SDK (Win). This provides the peripheral libraries and software development APIs, along with the compiler, debugger, and openocd tools.
+- [Microsoft VSCode](https://code.visualstudio.com/download) with the [C/C++ plug-in](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) installed. This makes for easy/quick compilations.  The project uses the VSCode-Maxim interface scripts, version 1.2.0. It is what interfaces VSCode to Maxim microcontrollers and allows the use of VSCode as the development IDE. A full user guide is located here:  [https://github.com/MaximIntegratedTechSupport/VSCode-Maxim](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
