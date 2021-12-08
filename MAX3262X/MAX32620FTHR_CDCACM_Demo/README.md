@@ -1,4 +1,5 @@
-#MAX32620FTHR USB CDC ACM DEMO
+# MAX32620FTHR USB CDC ACM DEMO
+
 The basic concept for the example firmware is to make the MAX32620FTHR (FTHR) board look like a USB-to-serial port (with plug and play capabilities) by implementing the USB CDC ACM protocol which requires no additional driver installation (except in Windows). So, the end result should work on multiple operating systems including Linux and MacOS.  The end-user will open two serial port terminals on the PC, one for "serial debug" of the FTHR, and one for the actual CDC-ACM serial port.  Then, typing in one terminal will echo back in the other.  See below for a screenshot of two serial port terminals opened.  COM5 is the CDC ACM serial port and COM10 is the console debug serial port on the MAX32620FTHR.
 
 The device driver for Windows shall be included with it digitally signed (the one in the kit is not).  This will allow for proper installation under Windows 10.
